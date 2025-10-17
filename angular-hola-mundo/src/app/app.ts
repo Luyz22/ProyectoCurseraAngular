@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { SaludadorComponent } from './saludador/saludador'; // 👈 Importa el componente
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [SaludadorComponent], // 👈 Angular 20 necesita esto
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
